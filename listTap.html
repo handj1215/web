@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      height: 100%;
+    }
+    header a {
+      text-align: center;
+      text-decoration: none;
+      font-size: 45px;
+      color: darkblue;
+      padding: 10px 40px 10px 40px;
+      font-weight: bolder;
+      border-bottom: 1px solid black;
+    }
+    header a:hover {
+      border-bottom: 3px solid black;
+    }
+    /* section {
+      width: 80%;
+
+    } */
+    .top_menu {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .main_grid {
+      display: grid;
+      grid-template-columns: 10% 80% 1s0%;
+    }
+    .img_card {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 40px;
+      position: relative;
+      /* top: 20px;
+      left: 20px;
+      right: 20px; */
+      margin: 5px 20px 5px 20px;
+      animation: card_ani 1s ease-in-out;
+    }
+    /* .img_card:hover {
+      border: 3px solid darkblue;
+    } */
+    .img_card:hover .overlay {
+      opacity: .9;
+    }
+    .img_card img {
+      position: relative;
+      height: auto;
+      width:100%;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .img_card h3, p {
+      text-align: center;
+      margin: 2px;
+    }
+    .overlay {
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: lightblue;
+    }
+    .overlay .intext {
+      top: 40%;
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      font-size: 45px;
+    }
+    @keyframes card_ani {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    @media (max-width:875px) {
+      .top_menu {
+        display: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="header.png" style="width:300px; height:100px; display:inline;" alt="">
+      <div class="top_menu">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+      </div>
+    </header>
+    <hr>
+    <div class="main_grid">
+      <span></span>
+      <section>
+        <div class="grid">
+
+          <div class="img_card">
+            <img src="백범일지.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                text
+              </div>
+            </div>
+            <h3>content</h3>
+            <p>contentcontent</p>
+          </div>
+
+          <div class="img_card">
+            <img src="평화의 어머니.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                text
+              </div>
+            </div>
+            <h3>content</h3>
+            <p>contentcontent</p>
+          </div>
+
+          <div class="img_card">
+            <img src="나를 보내지 마.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                text
+              </div>
+            </div>
+            <h3>content</h3>
+            <p>contentcontent</p>
+          </div>
+
+          <div class="img_card">
+            <img src="해리포터와 마법사의 돌.jpg.jfif" alt="">
+            <div class="overlay">
+              <div class="intext">
+                text
+              </div>
+            </div>
+            <h3>content</h3>
+            <p>contentcontent</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>
