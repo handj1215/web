@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    html {
+      height: 100%;
+    }
+    header a {
+      text-align: center;
+      text-decoration: none;
+      font-size: 45px;
+      color: darkblue;
+      padding: 10px 40px 10px 40px;
+      font-weight: bolder;
+      border-bottom: 1px solid black;
+    }
+    header a:hover {
+      border-bottom: 3px solid black;
+    }
+    /* section {
+      width: 80%;
+
+    } */
+    .top_menu {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      z-index: 1;
+    }
+    .top_menu a {
+      font-size:2vw;
+      background: white;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 25% 25% 25% 25%;
+    }
+    .main_grid {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+    }
+    .img_card {
+      border: 1px solid black;
+      border-radius: 5px;
+      padding: 40px;
+      position: relative;
+      /* top: 20px;
+      left: 20px;
+      right: 20px; */
+      margin: 5px 20px 5px 20px;
+      animation: card_ani 1s ease-in-out;
+    }
+    /* .img_card:hover {
+      border: 3px solid darkblue;
+    } */
+    .img_card:hover .overlay {
+      opacity: .9;
+    }
+    .img_card img {
+      position: relative;
+      height: auto;
+      width:100%;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    .img_card h3 {
+      text-align: center;
+      margin: 2px;
+      font-size:1.5vw;
+    }
+    .img_card p {
+      text-align: center;
+      margin: 2px;
+      font-size:1vw;
+    }
+    .overlay {
+      opacity: 0;
+      transition: 0.2s ease-in-out;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      background: lightblue;
+    }
+    .overlay .intext {
+      top: 40%;
+      position: relative;
+      text-align: center;
+      font-weight: bold;
+      color: white;
+      font-size: 45px;
+    }
+    @keyframes card_ani {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+    }
+    @media (max-width:1150px) {
+      .top_menu {
+        display: none;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="header.png" style="width:300px; height:100px; display:inline;" alt="">
+      <div class="top_menu">
+        <a href="list_과학.html" >과학</a>
+        <a style="background:skyblue;">소설</a>
+        <a href="list_시집.html">시집</a>
+        <a href="list_에세이.html">에세이</a>
+        <a href="list_역사.html">역사</a>
+        <a href="list_자서전.html">자서전</a>
+        <a href="list_종교.html">종교</a>
+      </div>
+    </header>
+    <hr>
+    <div class="main_grid">
+      <span></span>
+      <section>
+        <div class="grid">
+
+          <h1 style="text-align:center;">로맨스 소설</h1>
+
+          <div class="img_card">
+            <a href="소설/로맨스 소설/로미오와 줄리엣.html" target="_blank">
+            <img src="소설/로맨스 소설/로미오와 줄리엣.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>로미오와 줄리엣</h3>
+            <p>윌리엄 셰익스피어 지음 | 최종철 옮김 | 민음사 | 2008년 02월 28일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/로맨스 소설/오만과 편견.html" target="_blank">
+            <img src="소설/로맨스 소설/오만과 편견.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>오만과 편견</h3>
+            <p>제인 오스틴 지음 | 전승희 , 윤지관 옮김 | 민음사 | 2009년 01월 20일 출간 (1쇄 2003년 09월 20일)</p>
+            </a>
+          </div>
+          <span></span>
+
+
+
+          <h1 style="text-align:center;">모험 소설</h1>
+
+          <div class="img_card">
+            <a href="소설/모험 소설/15소년 표류기.html" target="_blank">
+            <img src="소설/모험 소설/15소년 표류기.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>15소년 표류기</h3>
+            <p>쥘 베른 지음 | 조한기 , 김준우 (작품 해설) 옮김 | 김순금 그림 | 삼성출판사 | 2017년 04월 01일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/모험 소설/80일 간의 세계일주.html" target="_blank">
+            <img src="소설/모험 소설/80일간의 세계 일주.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>80일 간의 세계 일주</h3>
+            <p>쥘 베른 지음 | 윤진 옮김 | 세바스티엥 무랭 그림 | 비룡소 | 2013년 01월 30일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/모험 소설/창문 넘어 도망친 100세 노인.html" target="_blank">
+            <img src="소설/모험 소설/창문 넘어 도망친 100세 노인.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>창문 넘어 도망친 100세 노인</h3>
+            <p>요나스 요나손 지음 | 임호경 옮김 | 열린책들 | 2013년 07월 25일 출간</p>
+            </a>
+          </div>
+
+
+
+          <h1 style="text-align:center;">씹덕 소설</h1>
+
+          <div class="img_card">
+            <a href="소설/씹덕 소설/(이 세계는 이미 내가 구해서 부와 권력을 손에 넣었고, 여기사와 여마왕과 성에서 즐겁게 살고 있으니 나 말고 다른 용자는) 더 이상 이세계에 오지 마세요.html" target="_blank">
+            <img src="소설/씹덕 소설/(이 세계는 이미 내가 구해서 부와 권력을 손에 넣었고, 여기사와 여마왕과 성에서 즐겁게 살고 있으니 나말고 다른 용자는)이세계에 오지 마세요.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>(이 세계는 이미 내가 구해서 부와 권력을 손에 넣었고, 여기사와 여마왕과 성에서 즐겁게 살고 있으니 나 말고 다른 용자는) 더 이상 이세계에 오지 마세요.</h3>
+            <p>이토 히로 지음 | 에렛토 그림 | 루트미디어 | 2018년 03월 28일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/씹덕 소설/내 여동생이 이렇게 귀여울 리가 없어.html" target="_blank">
+            <img src="소설/씹덕 소설/내 여동생이 이렇게 귀여울 리가 없어.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>내 여동생이 이렇게 귀여울리가 없어</h3>
+            <p>TSUKASA FUSHIMI 지음 | 유정한 옮김 | 대원씨아이 | 2010년 06월 15일 출간</p>
+            </a>
+          </div>
+          <span></span>
+
+
+
+          <h1 style="text-align:center;">역사 소설</h1>
+
+          <div class="img_card">
+            <a href="소설/역사 소설/나이트.html" target="_blank">
+            <img src="소설/역사 소설/나이트.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>나이트</h3>
+            <p>엘리 위젤 지음 | 김하락 옮김 | 예담 | 2007년 06월 20일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/역사 소설/톰 아저씨의 오두막집.html" target="_blank">
+            <img src="소설/역사 소설/톰 아저씨의 오두막집.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>톰 아저씨의 오두막집</h3>
+            <p>해리엣 비처 스토 , 백승자 엮음 지음 | 홍난지 그림 | 지경사 | 2008년 04월 05일 출간</p>
+            </a>
+          </div>
+          <span></span>
+
+
+
+          <h1 style="text-align:center;">철학 소설</h1>
+
+          <div class="img_card">
+            <a href="소설/철학 소설/꽃들에게 희망을.html" target="_blank">
+            <img src="소설/철학 소설/꽃들에게 희망을.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>꽃들에게 희망을</h3>
+            <p>트리나 폴러스 지음 | 김석희 옮김 | 트리나 폴러스 그림 | 시공주니어 | 2017년 01월 15일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/철학 소설/소피의 세계.html" target="_blank">
+            <img src="소설/철학 소설/소피의 세계.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>소피의 세계</h3>
+            <p>프리드리히 니체 지음 | 장희창 옮김 | 민음사 | 2004년 01월 02일 출간</p>
+            </a>
+          </div>
+
+          <div class="img_card">
+            <a href="소설/철학 소설/차라투스트라는 이렇게 말했다.html" target="_blank">
+            <img src="소설/철학 소설/차라투스트라는 이렇게 말했다.jpg" alt="">
+            <div class="overlay">
+              <div class="intext">
+                이동하기
+              </div>
+            </div>
+            <h3>차라투스트라는 이렇게 말했다</h3>
+            <p>프리드리히 니체 지음 | 장희창 옮김 | 민음사 | 2004년 01월 02일 출간</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </body>
+</html>

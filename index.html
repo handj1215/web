@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      animation: startAni 1s ease-in-out;
+    }
+
+
+    header img {
+      width: 300px;
+      height: 100px;
+    }
+    header a {
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      border: 1px solid black;
+      border-radius: 5px;
+      float: right;
+      padding: 15px;
+      font-size: 25px;
+      font-weight: bolder;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+
+    nav .top_menu {
+      background: #34cbcb;
+      width: 100%;
+      text-align: center;
+    }
+    nav .top_menu a {
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      display: inline;
+      padding: 5px 20px;
+      font-size: 35px;
+      font-weight: 800;
+      transition: 0.2s;
+    }
+
+
+    article .article_background {
+      background: #cce6ff;
+      position: relative;
+      height: 300px;
+    }
+    article img {
+      vertical-align: middle;
+    }
+    article h2 {
+      color: black;
+      text-shadow: 1px 1px gray;
+    }
+    .active {
+      background-color: #717171;
+    }
+    .Slides {
+      display: none;
+      animation-name: fade;
+      animation-duration: 2s;
+    }
+    .slideshow_container {
+      float: left;
+      left: 20%;
+      max-width: 200px;
+      position: relative;
+      margin: auto;
+      margin-top: 3px;
+    }
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 20px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    .slides_content {
+      float: left;
+      left: 250px;
+      top: 0px;
+      width: 600px;
+      position: absolute;
+    }
+
+
+    .mid_menu {
+      max-width: 100%;
+      background: white;
+      border: 1px solid black;
+      border-radius: 10px;
+      margin: 30px;
+      text-align: left;
+      padding: 10px;
+    }
+    .mid_menu h1 {
+      margin: 0;
+      padding: 0 0 0 100px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 20% 30% 30% 20%;
+    }
+    .left_mainList {
+      left: 0px;
+      height: 180px;
+      width: 70px;
+      background: white;
+      color: black;
+      font-size: 35px;
+      font-weight: bold;
+      text-align: center;
+      padding-top: 15px;
+      border: 1px solid black;
+      margin: 30px;
+      margin-top: 15px;
+      border-radius: 20px;
+      position: relative;
+    }
+    .left_mainList a {
+      text-decoration: none;
+      color: black;
+    }
+    .main_content {
+      width: 90%;
+      height: 200px;
+      background: #b3ccff;
+      border-radius: 10px;
+      padding-left: 5px;
+    }
+    .recomdation {
+      background: #eee6ff;
+      border-radius: 10px;
+      padding: 5px;
+      margin: 0 40px 20px 0;
+      font-size: 0.8em;
+      opacity: .8;
+    }
+    .recomdation img {
+      width: 100%;
+
+    }
+
+
+    @keyframes fade {
+      0% {opacity: .5}
+      100% {opacity: 1}
+    }
+    @keyframes leftImgAni {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+    @keyframes startAni {
+      from {opacity: .9;}
+      to {opacity: 1;}
+    }
+
+
+    @media (max-width:1100px) {
+      nav .top_menu a {
+        font-size: 20px;
+        padding: 5px;
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <img src="header.png" alt="?">
+      <a href="#section">책 분야 바로가기 ▼</a>
+        <a href="로그인.html">로그인 탭으로 이동</a>
+        <a href=책_추가_요청.html>게시판 탭으로 이동</a>
+    </header>
+
+    <nav>
+      <div class="top_menu">
+        <a href="#">메뉴 ▶</a>
+        <a href="list_과학.html">과학</a>
+        <a href="list_소설.html">소설</a>
+        <a href="list_시집.html">시집</a>
+        <a href="list_에세이.html">에세이</a>
+        <a href="list_역사.html">역사</a>
+        <a href="list_자서전.html">자서전</a>
+        <a href="list_종교.html">종교</a>
+      </div>
+    </nav>
+
+    <article>
+      <div class="article_background">
+        <div class="slideshow_container">
+
+        <div class="Slides">
+          <div class="numbertext">1 / 3</div>
+          <img src=".\과학\이기적 유전자.jpg" style="width:100%;">
+          <div class="slides_content">
+            <h2>이기적 유전자</h2>
+            <p style="font-size:20px; background:#e6eeff; border-radius:10px;">『이기적 유전자』는 처음 출간되었을 당시 과학계와 일반 대중들에게 폭발적인 반향을 불러일으키며 세기의 문제작으로 떠올랐다. 혁신적인 통찰에 더해 사람의 마음을 휘어잡는 뛰어난 문장력과 명쾌한 구성력 또한 보여 주는 이 책은 명실상부 과학 교양서의 바이블로 일컬어지기에 손색이 없다.</p>
+          </div>
+        </div>
+
+        <div class="Slides">
+          <div class="numbertext">2 / 3</div>
+          <img src=".\자서전\백범일지.jpg" style="width:100%;">
+          <div class="slides_content">
+            <h2>백범일지</h2>
+            <p style="font-size:20px; background:#e6eeff; border-radius:10px;">백범 김구 자서전. 『백범일지』는 친필 원본은 물론 등사본과 필사본, 여러 가지 출간본 등 여러 저본을 일일이 면밀하게 검토, 대조했다.  또한 사전류는 물론 고전, 규장각 자료 등의 고문서, 수많은 회고록, 일본, 중국 등 해외의 임정 관계 자료까지 두루 활용하고 여러 분야의 전문가들로부터 자문을 받아 원본의 미흡한 점과 착오 등을 수정, 보완했다.</p>
+          </div>
+        </div>
+
+        <div class="Slides">
+          <div class="numbertext">3 / 3</div>
+          <img src=".\소설\철학 소설\차라투스트라는 이렇게 말했다.jpg" style="width:100%;">
+          <div class="slides_content">
+            <h2>차라투스트라는 이렇게 말했다</h2>
+            <p style="font-size:20px; background:#e6eeff; border-radius:10px;">"신은 죽었다!"라는 선언으로, 유럽 문명의 몰락을 예언한 철학자 프리드리히 니체의 대표작. '초인', '권력에의 의지', '영겁회귀' 등 니체의 핵심 철학이 장쾌하고 시적인 언어로 집약된 작품으로 새로운 세계의 새로운 인간을 위한 새로운 원칙을 제시한다.</p>
+          </div>
+        </div>
+
+        </div>
+      </div>
+    </article>
+
+
+    <section id="section">
+      <div class="mid_menu">
+      <h1>책 분야별 보기 ▼</h1>
+      </div>
+
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_과학.html" target="_blank" style="text-decoration:none;">과학 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서 <br> 위험한 과학책 </h3>
+          <img src="과학/위험한 과학책.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            미국 최고의 사이언스 웹툰 ‘xkcd’의 작가 랜들 먼로는 정말 궁금했지만 그 누구도 대답해 주지 않았던 이 기상천외한 질문들에 대한 해답을 찾기 위해 온갖 방법을 총동원... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서 <br> 이기적 유전자</h3>
+          <img src="과학/이기적 유전자.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            『이기적 유전자』는 처음 출간되었을 당시 과학계와 일반 대중들에게 폭발적인 반향을 불러일으키며 세기의 문제작으로 떠올랐다. 혁신적인 통찰에 더해... </p>
+        </div>
+
+        <div class="recomdation">
+          추천 사이트 ① ▼
+          <a href="http://book.idsolution.co.kr/" target="_blank">http://book.idsolution <br> .co.kr/</a>
+          <p> <strong>독서 취향 테스트</strong>  <br> : 독서 선호도를 위한 리서치 사이트</p>
+          <img src="추천1.png" alt="">
+        </div>
+      </div>
+      </div>
+
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_소설.html" target="_blank" style="text-decoration:none;">소설 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 오만과 편견 </h3>
+          <img src="소설/로맨스 소설/오만과 편견.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            전혀 새로운 번역, 원문에 충실한 정확한 번역으로 만나는 『오만과 편견』. 영국인들이 가장 사랑하는 작가로 꼽힌 제인 오스틴의 대표작이자 출세작... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 차라투스트라는 이렇게 말했다 </h3>
+          <img src="소설/철학 소설/차라투스트라는 이렇게 말했다.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            "신은 죽었다!"라는 선언으로, 유럽 문명의 몰락을 예언한 철학자 프리드리히 니체의 대표작. '초인', '권력에의 의지', '영겁회귀' 등 니체의... </p>
+        </div>
+
+        <div class="recomdation">
+          추천 사이트 ② ▼
+          <a href="http://web.bibly.kr/event/knowledge_taste?" target="_blank">http://web.bibly.kr/event/ <br> knowledge_taste?/</a>
+          <p> <strong>지적 취향 분석 테스트</strong>  <br> :자신의 지적 취향을 분석해서 어울리는 책을 찾아볼 수 있는 사이트</p>
+          <img src="추천2.png" alt="">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_시집.html" target="_blank" style="text-decoration:none;">시집 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 꽃을 보듯 너를 본다 </h3>
+          <img src="시집/꽃을 보듯 너를 본다.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            나태주 시집 『꽃을 보듯 너를 본다』. 이 시집은 시인 나태주의 시 가운데 인터넷의 블로그나 트위터에서 자주 오르내리는 시들만 모아 엮은 책... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 좋다고 하니까 나도 좋다 </h3>
+          <img src="시집/좋다고 하니까 나도 좋다.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            우리 시대 가장 따뜻한 시인, 나태주가 시집에서는 못다 한 일상의 소소한 이야기들을 담아 산문집으로 엮었다. 시인은... </p>
+        </div>
+
+        <div class="recomdation">
+          추천 사이트 ① ▼
+          <a href="https://cafe.naver.com/chaek1ja" target="_blank">https://cafe.naver.com/ <br> chaek1ja</a>
+          <p> <strong>여러 사람들과 책에 대한 정보를 공유하는 카페</strong>  <br> : 독서를 좋아하는 사람들과 가치 독서를 할 수 있는 사이트</p>
+          <img src="추천3.png" alt="">
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_에세이.html" target="_blank" style="text-decoration:none; font-size: 0.9em;">에세이 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 모든 순간이 너였다 </h3>
+          <img src="에세이/모든 순간이 너였다.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+             바쁜 일상을 살다 보면 문득 내 마음은 돌보지 못한 채, 나의 모든 순간은 정신없이 흘려보낸 채 어두운 밤을 맞이하게 되는 순간이 있다. 〈모든 순간이 너였다〉는... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 언어의 온도 </h3>
+          <img src="에세이/언어의 온도.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            언어에는 따뜻함과 차가움, 적당한 온기 등 나름의 온도가 있다. 세상살이에 지칠 때 어떤 이는 친구와 이야기를 주고받으며 고민을 털기도 하고, 어떤 이는... </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_역사.html" target="_blank" style="text-decoration:none;">역사 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 삼국지 </h3>
+          <img src="역사/삼국지.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            교육적 가치를 두 가지 주제로 분류하여 각각 1, 2, 3부로 엮었다. 1부에서는 학문의 태도에 관련된 독서와 공부에 대하여, 2부에서는... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 아버지의 편지 </h3>
+          <img src="역사/아버지의 편지.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+          BC 《무한도전》, O‘TVN 《어쩌다 어른》 등 다수의 방송에 출연해 화제를 모은 바 있는 스타강사 설민석의 재미있고 깊이 있는 한국사 책 『설민석의 조선왕조실록』. 27명의... </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_자서전.html" target="_blank" style="text-decoration:none; font-size: 0.9em;">자서전 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 백범일지 </h3>
+          <img src="자서전/백범일지.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            백범 김구 자서전. 『백범일지』는 친필 원본은 물론 등사본과 필사본, 여러 가지 출간본 등 여러 저본을 일일이 면밀하게 검토, 대조했다. 또한... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 평화의 어머니 </h3>
+          <img src="자서전/평화의 어머니.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+              “나의 길은 험난하고 절박했습니다. 무너지는 억장을 홀로 쓸어안고 속으로만 통곡해야 했습니다. 그러나 가난과 기아, 분쟁과 고통이 사라지는 평화로운 세상, 인류의 눈물을 닦아주는... </p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="left_mainList"><a href="list_종교.html" target="_blank" style="text-decoration:none;">종교 ▶</a> </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 무소유 </h3>
+          <img src="종교/무소유.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            무소유의 삶을 몸소 실천하고 떠나신 성철 스님, 무소유의 화두를 던지고 그 향기를 널리 퍼지게 하신 법정스님. 『무소유』에는 두 분 스님의 삶을 쫓아 무소유를 실천하는... </p>
+        </div>
+
+        <div class="main_content">
+         <h3 style="display:inline-block; margin-left:10px; margin-bottom: 0px;">◀ 추천 도서<br> 십자가 </h3>
+          <img src="종교/십자가.jpg" style="height: 90%; margin-top: 10px; float:left;" alt="">
+          <br> <p style="display:inline-block; margin-left:10px; width:50%; font-size:0.75em; background: #e6eeff; border-radius: 10px;">
+            2010년 요시카와 에이지 문학상을 수상한 시게마츠 기요시의 작품 『십자가』. 다큐멘터리에서 자살한 왕따 학생의 아버지가 인터뷰하는 것을 보고 2주 만에 써내려갔다는 이 소설은... </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("Slides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
+      setTimeout(showSlides, 3000);
+    }
+
+
+
+
+
+    </script>
+  </body>
+</html>
